@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/bungee</item>
+        <item>@font/calistoga</item>
+        <item>@font/candal</item>
+        <item>@font/palanquin_dark_medium</item>
+        <item>@font/yeseva_one</item>
+    </array>
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AppControlingActivities.Add_New_Bunner">
+
+    <ProgressBar
+        android:id="@+id/adding_new_Bunner_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:id="@+id/add_Bunner_Food_food_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/orange_50"
+        android:layout_below="@+id/adding_new_Bunner_progress"
+        android:elevation="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/add_new_bunner_go_back_btn"
+            android:layout_width="39dp"
+            android:layout_height="38dp"
+            android:background="@color/transparant"
+            android:src="@drawable/arrow_back_icon"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="serif"
+            android:text="New Bunner"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bunnerPhototext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_Bunner_Food_food_bar"
+        android:fontFamily="serif"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="New Bunner"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" /> /
+    <ImageView
+        android:id="@+id/food_bunner_pic"
+        android:layout_width="match_parent"
+        android:layout_height="217dp"
+        android:layout_below="@+id/bunnerPhototext"
+        android:src="@drawable/food_bunner"
+        android:layout_marginTop="10dp"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/next_btn"
+        android:layout_width="392dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btns_backround"
+        android:text="NEXT"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

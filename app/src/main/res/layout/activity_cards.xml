@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/orange_50"
+    tools:context=".UserActivities.Cards"
+    >
+
+    <TextView
+        android:id="@+id/Loading_Cards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="serif"
+        android:text="Loading..."
+        android:textColor="@color/red"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/mycard_bae"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/orange_50"
+        android:elevation="10dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="7dp"
+            android:fontFamily="serif"
+            android:text="My Cards"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/cards_back_btn"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/arrow_back_icon" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/cardScroll"
+        android:visibility="gone"
+        android:layout_below="@+id/mycard_bae"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cardsRv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <RelativeLayout
+                android:id="@+id/bell_cart"
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardsRv"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dip"
+                android:elevation="15dp"
+                android:background="@drawable/category_backround"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/item_totla_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="$ 2333"
+                    android:fontFamily="serif"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_totla_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item Total :"
+                    android:fontFamily="serif"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/delevry_service_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_totla_num"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:text="$ 2333"
+                    android:fontFamily="serif"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/delevry_service_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_totla_text"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="serif"
+                    android:text="Delevrey Service :"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/delevry_service_text"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/Total_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:text="$ 2333"
+                    android:fontFamily="serif"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Totale_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_below="@+id/view"
+                    android:layout_marginTop="10dp"
+                    android:text="Total :"
+                    android:fontFamily="serif"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/check_out_btn"
+                android:layout_width="239dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/bell_cart"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/yollow_backround"
+                android:gravity="center"
+                android:text="check Out"
+                android:fontFamily="serif"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

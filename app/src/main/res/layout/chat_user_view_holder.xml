@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+android:background="@color/orange_50"
+    >
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_profile_VH"
+        android:layout_width="54dp"
+        android:layout_height="53dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="7dp"
+        android:src="@drawable/user_profile_icon" />
+    <TextView
+        android:id="@+id/user_name_VH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/user_profile_VH"
+        android:fontFamily="serif"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/last_message_VH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/user_profile_VH"
+        android:fontFamily="serif"
+        android:layout_marginTop="3dp"
+android:layout_alignParentBottom="true"
+       android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:textSize="17sp"
+        />
+
+    <TextView
+        android:id="@+id/new_message_Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="serif"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/counter_backround"
+        android:paddingStart="5dp"
+        android:visibility="gone"
+        android:paddingEnd="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:text="10"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+</RelativeLayout>

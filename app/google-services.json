@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1059934961418",
+    "project_id": "masterchef-app",
+    "storage_bucket": "masterchef-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059934961418:android:d2089f9721055e31dec4f3",
+        "android_client_info": {
+          "package_name": "com.example.masterchef_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADlKjwqEC3Y4Agr5Yu7HZImrCsB3y6f9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AppControlingActivities.Related_Bunner_Food">
+    <ProgressBar
+        android:id="@+id/adding_RelatedFood_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:visibility="gone"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/add_Bunner_pic_food_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/orange_50"
+android:layout_below="@+id/adding_RelatedFood_progress"
+        android:elevation="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/add_new_bunner_go_back_btn"
+            android:layout_width="39dp"
+            android:layout_height="38dp"
+            android:background="@color/transparant"
+            android:src="@drawable/arrow_back_icon"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="serif"
+            android:text="New Bunner"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_Bunner_pic_food_bar"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/new_food_bunner_pic"
+                android:layout_width="157dp"
+                android:layout_height="156dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/empty_image" />
+
+            <EditText
+                android:id="@+id/food_bunner_title"
+                android:layout_width="199dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/new_food_bunner_pic"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input_backround"
+                android:hint="Add Food Title"
+                android:fontFamily="serif"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/foodTitle_bunner_error"
+                android:layout_width="165dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/food_bunner_title"
+                android:layout_gravity="left"
+                android:gravity="left|center"
+                android:paddingStart="24dp"
+                android:fontFamily="serif"
+                android:text="the email is incorrect"
+                android:textColor="@color/red"
+                android:textSize="13sp"
+                android:visibility="invisible" />
+            <EditText
+                android:id="@+id/food_bunner_price"
+                android:layout_width="199dp"
+                android:layout_height="55dp"
+                android:fontFamily="serif"
+                android:layout_below="@+id/new_food_bunner_pic"
+                android:background="@drawable/input_backround"
+                android:hint="Add Food Price"
+                android:padding="10dp"
+                android:drawableRight="@drawable/money_icon"
+                android:layout_toRightOf="@+id/food_bunner_title"
+                android:layout_marginTop="15dp"
+                android:inputType="number"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/foodPrice_bunner_error"
+                android:layout_width="165dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/food_bunner_price"
+                android:layout_gravity="left"
+                android:layout_marginLeft="52dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/foodTitle_bunner_error"
+                android:gravity="left|center"
+                android:fontFamily="serif"
+                android:paddingStart="24dp"
+                android:text="the email is incorrect"
+                android:textColor="@color/red"
+                android:visibility="invisible"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/food_bunner_tax"
+                android:layout_width="199dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/food_bunner_title"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_backround"
+                android:hint="Add Food Tax"
+                android:fontFamily="serif"
+                android:drawableRight="@drawable/money_icon"
+                android:layout_marginStart="8dp"
+                android:inputType="number"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:id="@+id/foodTax_bunner_error"
+                android:layout_width="165dp"
+                android:layout_height="20dp"
+                android:layout_gravity="left"
+                android:gravity="left|center"
+                android:layout_below="@+id/food_bunner_tax"
+                android:paddingStart="24dp"
+                android:fontFamily="serif"
+                android:text="the email is incorrect"
+                android:textColor="@color/red"
+                android:visibility="invisible"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/food_bunner_del_Service"
+                android:layout_width="199dp"
+                android:layout_height="55dp"
+                android:layout_below="@+id/food_bunner_price"
+                android:background="@drawable/input_backround"
+                android:hint="Add Delevry Ser"
+                android:drawableRight="@drawable/money_icon"
+                android:padding="10dp"
+                android:fontFamily="serif"
+
+                android:layout_toRightOf="@+id/food_bunner_tax"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/food_bunner_DelSer_error"
+                android:layout_width="165dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/food_bunner_del_Service"
+                android:layout_gravity="left"
+                android:layout_marginLeft="52dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/foodTax_bunner_error"
+                android:gravity="left|center"
+                android:fontFamily="serif"
+
+                android:paddingStart="24dp"
+                android:text="the email is incorrect"
+                android:textColor="@color/red"
+                android:visibility="invisible"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/food_bunner_calories"
+                android:layout_width="199dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/food_bunner_del_Service"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/input_backround"
+                android:drawableRight="@drawable/fire_icon"
+                android:fontFamily="serif"
+                android:hint="Add Food Calories"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/foodCalories_bunner_error"
+                android:layout_width="165dp"
+                android:layout_height="20dp"
+                android:layout_gravity="left"
+                android:gravity="left|center"
+                android:layout_below="@+id/food_bunner_calories"
+                android:paddingStart="24dp"
+                android:text="the email is incorrect"
+                android:textColor="@color/red"
+                android:fontFamily="serif"
+                android:visibility="invisible"
+                android:textSize="13sp" />
+            <EditText
+                android:id="@+id/food_bunner_Time"
+                android:layout_width="199dp"
+                android:layout_height="55dp"
+                android:layout_below="@+id/food_bunner_del_Service"
+                android:background="@drawable/input_backround"
+                android:hint="Add Food Time"
+                android:padding="10dp"
+                android:layout_toRightOf="@+id/food_bunner_calories"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="serif"
+                android:drawableRight="@drawable/time_icon"
+                android:inputType="number"
+                android:layout_marginStart="8dp"/>
+            <TextView
+                android:id="@+id/foodTime_error"
+                android:layout_width="165dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/food_bunner_Time"
+                android:layout_gravity="left"
+                android:layout_marginLeft="52dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/foodCalories_bunner_error"
+                android:gravity="left|center"
+                android:paddingStart="24dp"
+                android:fontFamily="serif"
+                android:text="the email is incorrect"
+                android:textColor="@color/red"
+                android:visibility="invisible"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/food_bunner_Description"
+                android:layout_width="391dp"
+                android:layout_height="121dp"
+                android:layout_below="@+id/food_bunner_calories"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/description_backround"
+                android:gravity="top"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="serif"
+                android:hint="Add Food Description..."
+                android:padding="10dp" />
+            <TextView
+                android:id="@+id/foodDescription_error"
+                android:layout_width="165dp"
+                android:layout_height="20dp"
+                android:layout_gravity="left"
+                android:gravity="left|center"
+                android:layout_below="@+id/food_bunner_Description"
+                android:paddingStart="24dp"
+                android:text="the email is incorrect"
+                android:textColor="@color/red"
+                android:visibility="invisible"
+                android:textSize="13sp" />
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/save_food_bunner_btns"
+        android:layout_width="392dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btns_backround"
+        android:text="Save"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+      />
+    <ProgressBar
+        android:id="@+id/related_bunner_Food_progress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="31dp"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/save_food_bunner_btns"
+        android:layout_marginTop="3dp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivities.Add_order">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/add_orderRv"
+        android:layout_width="match_parent"
+        android:layout_height="464dp"
+        android:layout_alignParentTop="true" />
+    <TextView
+        android:id="@+id/order_totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_orderRv"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/category_backround"
+android:padding="5dp"
+        android:elevation="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif"
+        android:text="Total Price : 18000 $"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:elevation="10dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/custmer_name"
+            android:layout_width="392dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/input_backround"
+            android:drawableRight="@drawable/person_icon"
+            android:elevation="10dp"
+            android:inputType="text"
+            android:fontFamily="serif"
+            android:hint="your name..."
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/cusyomer_name_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/custmer_name"
+            android:layout_gravity="left"
+            android:gravity="left|center"
+            android:paddingStart="24dp"
+            android:text="the email is incorrect"
+            android:textColor="@color/red"
+            android:textSize="13sp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/custmer_phone"
+            android:layout_width="392dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/custmer_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/input_backround"
+            android:drawableRight="@drawable/phone_icon"
+            android:elevation="10dp"
+            android:fontFamily="serif"
+            android:inputType="phone"
+
+            android:hint="your phone..."
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/custmer_phone_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/custmer_phone"
+            android:layout_gravity="left"
+            android:gravity="left|center"
+            android:paddingStart="24dp"
+            android:text="the email is incorrect"
+            android:textColor="@color/red"
+            android:textSize="13sp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/custmer_email"
+            android:layout_width="392dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/custmer_phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/input_backround"
+            android:drawableRight="@drawable/email_icon"
+            android:elevation="10dp"
+            android:fontFamily="serif"
+android:inputType="textEmailAddress"
+            android:hint="your email..."
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/custmer_email_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/custmer_email"
+            android:layout_gravity="left"
+            android:gravity="left|center"
+            android:paddingStart="24dp"
+            android:text="the email is incorrect"
+            android:textColor="@color/red"
+            android:textSize="13sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/order_btns"
+            android:layout_width="239dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/yollow_backround"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Order Now"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

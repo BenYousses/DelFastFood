@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppControlingActivities.order_details">
+    <RelativeLayout
+        android:id="@+id/orders_details_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/orange_50"
+        android:elevation="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/order_details_go_back_btn"
+            android:layout_width="39dp"
+            android:layout_height="38dp"
+            android:background="@color/transparant"
+            android:src="@drawable/arrow_back_icon"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="serif"
+            android:text="Order Details"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/orders_details_bar"
+>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/order_details_Rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/details_order_totalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_details_Rv"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/category_backround"
+                android:padding="5dp"
+                android:elevation="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="serif"
+                android:text="Total Price : 18000 $"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <RelativeLayout
+                android:layout_width="401dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_order_totalPrice"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/category_backround"
+                android:elevation="10dp"
+                android:padding="18dp"
+                android:layout_marginTop="30dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/customer_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Information"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    android:fontFamily="serif"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/custmer_name"
+                    android:layout_width="392dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/category_backround"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"
+                    android:gravity="center|left"
+                    android:text="Name:"
+                    android:fontFamily="serif"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/customer_info"
+                    android:padding="10dp" />
+
+
+                <TextView
+                    android:id="@+id/custmer_phone"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/custmer_name"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/category_backround"
+                    android:fontFamily="serif"
+                    android:gravity="center|left"
+                    android:text="Phone:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/custmer_email"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/custmer_phone"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/category_backround"
+                    android:fontFamily="serif"
+                    android:textColor="@color/black"
+                    android:gravity="center|left"
+                    android:text="Email:"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="10dp" />
+
+                <ImageButton
+                    android:id="@+id/email_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/email_icon"
+                    android:background="@drawable/category_backround"
+                    android:elevation="10dp"
+                    android:layout_toRightOf="@+id/custmer_email"
+                    android:layout_below="@+id/custmer_phone"
+                    android:padding="10dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginStart="10dp"
+                    />
+                <ImageButton
+                    android:id="@+id/phone_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/phone_icon"
+                    android:background="@drawable/category_backround"
+                    android:elevation="10dp"
+                    android:layout_toRightOf="@+id/custmer_phone"
+                    android:layout_below="@+id/custmer_name"
+                    android:padding="10dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginStart="10dp"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

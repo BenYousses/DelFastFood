@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:elevation="5dp"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:background="@drawable/category_backround"
+    >
+
+    <ImageView
+        android:id="@+id/foodmenu_pic_VH"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:src="@drawable/patesry"
+        android:layout_gravity="center"
+       />
+<TextView
+    android:id="@+id/foodmenu_name_VH"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="patesry"
+    android:layout_marginTop="3dp"
+    android:fontFamily="serif"
+    android:layout_gravity="center"
+    android:textColor="@color/black"
+    android:textSize="16sp"
+    android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/foodmenu_price_VH"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100 $"
+        android:paddingStart="5dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+android:layout_marginTop="5dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

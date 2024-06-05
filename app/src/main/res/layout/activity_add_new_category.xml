@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppControlingActivities.Add_New_Category"
+    android:background="@color/orange_50">
+    <RelativeLayout
+        android:id="@+id/add_category_food_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/orange_50"
+        android:elevation="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/add_new_cat_go_back_btn"
+            android:layout_width="39dp"
+            android:layout_height="38dp"
+            android:background="@color/transparant"
+            android:src="@drawable/arrow_back_icon"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/newCategoryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="serif"
+            android:text="New Category"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <ProgressBar
+        android:id="@+id/add_new_category_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:visibility="gone" />
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/add_category_food_bar"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/category_image"
+            android:layout_width="227dp"
+            android:layout_height="207dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/editCategoryRv"
+            android:src="@drawable/empty_image" />
+
+        <EditText
+            android:id="@+id/category_name"
+            android:layout_width="392dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/category_image"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/input_backround"
+            android:hint="Category Name"
+            android:fontFamily="serif"
+            android:padding="10dp"
+            android:layout_marginTop="35dp"/>
+        <TextView
+            android:id="@+id/categoryName_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left|center"
+            android:paddingStart="24dp"
+            android:layout_below="@+id/category_name"
+            android:text="the email is incorrect"
+            android:textColor="@color/red"
+            android:textSize="13sp"
+            android:visibility="invisible" />
+        <TextView
+            android:id="@+id/save_category_btns"
+            android:layout_width="392dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/category_name"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btns_backround"
+            android:text="Save"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="100dp"/>
+        <TextView
+            android:id="@+id/All_CategoriesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Categories"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentLeft="true"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/editCategoryRv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/All_CategoriesText"
+            android:layout_marginTop="10dp"
+            />
+
+        <ProgressBar
+            android:id="@+id/adding_Category_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="31dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/save_category_btns"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+</RelativeLayout>

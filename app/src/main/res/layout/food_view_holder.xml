@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:elevation="5dp"
+    android:padding="5dp"
+    android:background="@drawable/category_backround"
+    >
+
+    <ImageView
+        android:id="@+id/holder_food_pic"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:src="@drawable/patesry" />
+    <TextView
+        android:id="@+id/holder_food_title"
+        android:layout_width="wrap_content"
+        android:fontFamily="serif"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+
+
+    <TextView
+        android:id="@+id/holder_food_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/likes_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+     />
+
+        <TextView
+            android:id="@+id/likesNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/likes_btn"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+
+            />
+
+        <ImageButton
+            android:id="@+id/holder_add_food_btn"
+            android:layout_width="47dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/orange_btns_backround"
+            android:src="@drawable/black_add_icon" />
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

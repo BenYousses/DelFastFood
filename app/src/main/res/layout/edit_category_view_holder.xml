@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="5dp"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/category_backround"
+    >
+
+    <ImageView
+        android:id="@+id/edit_category_pic"
+        android:layout_width="87dp"
+        android:layout_height="81dp"
+android:layout_gravity="center_horizontal"
+        android:src="@drawable/patesry" />
+    <TextView
+        android:id="@+id/edit_category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:layout_gravity="center_horizontal"
+
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/edit_category_title"
+    android:layout_marginTop="5dp"
+
+    >
+    <ImageButton
+        android:id="@+id/delete_editCategory_btn"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/btns_backround"
+        android:src="@drawable/white_delete_icon" />
+
+    <ImageButton
+        android:id="@+id/update_editcategory_btn"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/green_btns_backround"
+        android:layout_toLeftOf="@+id/delete_editCategory_btn"
+        android:src="@drawable/white_update_icon" />
+
+</RelativeLayout>
+
+</LinearLayout>

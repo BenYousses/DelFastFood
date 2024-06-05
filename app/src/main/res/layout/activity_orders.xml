@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppControlingActivities.Orders_Activity">
+    <RelativeLayout
+        android:id="@+id/orders_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/orange_50"
+        android:elevation="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/order_go_back_btn"
+            android:layout_width="39dp"
+            android:layout_height="38dp"
+            android:background="@color/transparant"
+            android:src="@drawable/arrow_back_icon"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="serif"
+            android:text="Orders"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/ordersRv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/orders_bar"/>
+
+</RelativeLayout>

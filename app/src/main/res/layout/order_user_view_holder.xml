@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="@drawable/category_backround"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/orders_user_pic_VH"
+        android:layout_width="60dp"
+        android:layout_height="76dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/patesry"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        />
+    <TextView
+        android:id="@+id/order_user_title_VH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="oussama Id Yous"
+        android:fontFamily="serif"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/orders_user_pic_VH"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+       />
+
+    <TextView
+        android:id="@+id/order_number_items_VH"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:text="5 Piessce"
+android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="5dp"
+        />
+</RelativeLayout>

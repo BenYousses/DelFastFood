@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    android:background="@color/orange_50"
+    tools:context=".UserActivities.FoodOfCategoryActvity">
+
+    <LinearLayout
+        android:id="@+id/catgory_data"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/orange_50"
+        android:elevation="15dp"
+        android:gravity="center|left"
+        android:padding="5dp">
+
+
+        <ImageButton
+            android:id="@+id/cat_food_back_btn"
+            android:layout_width="39dp"
+            android:layout_height="38dp"
+            android:background="@color/transparant"
+            android:src="@drawable/arrow_back_icon"
+            android:layout_centerVertical="true"
+            />
+        <ImageView
+            android:id="@+id/cat_food_img"
+            android:layout_width="62dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/patesry" />
+
+        <TextView
+            android:id="@+id/cate_food_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patesry"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Number_Of_RelatedFood"
+            android:layout_width="191dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:fontFamily="serif"
+            android:gravity="center|right"
+            android:text="12 RealtedFood"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/Loading_RelatedCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:text="Loading..."
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="@color/red" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rerlated_foodRV"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/catgory_data" />
+
+
+</RelativeLayout>
